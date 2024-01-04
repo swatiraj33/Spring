@@ -43,6 +43,7 @@ public class NameController {
 	//get all names in the database
 	@GetMapping(value = "/name/all", consumes = MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody List<Name> getAllNames(){
+		System.out.println("Hello");
 		return nameservice.displayAll();
 	}
 	
